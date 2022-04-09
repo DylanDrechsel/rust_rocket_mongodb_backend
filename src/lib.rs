@@ -11,6 +11,9 @@ pub fn rocket_builder() -> rocket::Rocket {
     .mount("/", routes![
         routes::echo::echo_fn,
         routes::ping::ping_fn,
-        routes::users::get_users::get_users
+        routes::users::get_users::get_users,
+        routes::users::create_user::create_user,
+        routes::users::get_user_by_id::get_user_by_id,
+        routes::users::update_user_by_id::update_user_by_id
     ])
 }
