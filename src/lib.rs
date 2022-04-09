@@ -14,6 +14,7 @@ pub fn rocket_builder() -> rocket::Rocket {
         routes::users::get_users::get_users,
         routes::users::create_user::create_user,
         routes::users::get_user_by_id::get_user_by_id,
-        routes::users::update_user_by_id::update_user_by_id
+        routes::users::update_user_by_id::update_user_by_id,
+        routes::users::delete_user_by_id::delete_user_by_id
     ])
 }
